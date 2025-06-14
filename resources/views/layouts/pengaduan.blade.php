@@ -38,14 +38,17 @@
         }
 
         #app {
-            height: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         main {
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100%;
+            padding: 1rem;
         }
 
         body {
@@ -77,6 +80,13 @@
 
         .btn-primary:hover {
             background-color: #4a8bb8;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 1rem;
+                box-sizing: border-box;
+            }
         }
 
         @media (max-width: 576px) {
